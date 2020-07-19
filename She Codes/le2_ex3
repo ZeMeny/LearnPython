@@ -1,0 +1,34 @@
+from random import randint
+
+# Pick a random number between 1 and 100.
+# print(x)
+# def user_input(num):
+#     x = int(input("Enter a number from 1-99: "))
+#     if x == num:
+#         print("you won")
+#         else:
+#         print("you loss")
+def user_input(num):
+    x = int(input("Enter a number from 1-99: "))
+    if x == num:
+        print("you won")
+    elif x > num:
+        print("your number is lower")
+    elif x < num:
+        print("your number is higher")
+        
+def guess_number():
+    num = randint(1, 100)
+    user_input(num)
+
+
+
+
+
+
+
+
+
+
+
+
