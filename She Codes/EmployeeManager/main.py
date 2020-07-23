@@ -32,9 +32,9 @@ def main():
                 utils.markAttendance()
             elif user_input == '8':
                 utils.printAll()
-        except ValueError:
-            print(f"An Error occurred:  {ValueError}")
-            print("try again")
+        except Exception as e:
+            print(f"An Error occurred:  {e}")
+            input("Press any key to try again")
         finally:
             main()
 
