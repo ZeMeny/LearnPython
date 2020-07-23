@@ -109,7 +109,7 @@ def validateID(emp_id):
 
 def validatePhone(phone):
     valid = phone.isnumeric()
-    pattern = "(\w{3})\w{3}-\w{4}"  # todo: find a pattern
+    pattern = "05\d{8}"
     valid = valid and re.search(pattern, phone)
     return valid
 
